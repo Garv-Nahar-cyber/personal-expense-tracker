@@ -3,9 +3,8 @@
 expenses = []
 total_expense = 0
 
-print("================================")
-print("     PERSONAL EXPENSE TRACKER")
-print("================================")
+print("----PERSONAL EXPENSE TRACKER----")
+
 
 name = input("Enter your name: ")
 budget = float(input("Enter your monthly budget: ₹"))
@@ -35,7 +34,7 @@ while True:
             print("No expenses added yet.")
 
         else:
-            print("\n------ YOUR EXPENSES ------")
+            print("\n--YOUR EXPENSES ---")
 
             for i in range(len(expenses)):
                 print(i + 1, ".", expenses[i][0],
@@ -45,7 +44,7 @@ while True:
     elif choice == "3":
         remaining = budget - total_expense
 
-        print("\n------ SUMMARY ------")
+        print("\n-- SUMMARY --")
         print("Name:", name)
         print("Monthly Budget: ₹", budget)
         print("Total Expense: ₹", total_expense)
